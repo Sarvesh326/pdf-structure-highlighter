@@ -1,0 +1,9 @@
+pytesseract>=0.3.10
+pdf2image>=1.17.0
+Pillow>=10.0.0
+transformers>=4.42.0
+datasets>=2.19.0
+torch
+numpy>=1.26.0
+tqdm>=4.66.0
+regex>=2024.5.15
