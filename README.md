@@ -155,7 +155,7 @@ trainer.train()
 
 ## 6) Results
 
-![App Screenshot](https://drive.google.com/file/d/1f6oAo_Qdtiqss3qiPRO-t106fO3MZzmW/view?usp=drive_link)
+![App Screenshot](data/screenshots/result_ss.png)
 
 ---
 
@@ -164,12 +164,12 @@ trainer.train()
 - **OCR Issue:** Sub-section headers not able to detect due to Roman Initials being absent from the OCR output.
 
   **Solution that might help** : Fine-tune OCR (Increasing DPI/Lowering Confidence Thresholds).
+  ![App Screenshot](data/screenshots/challenges_ss2.png)
 
 - Sub-section headers not being ended by period (.)
 
   **Solution that might help** : Use OCR output to create a txt file and then use regex to find end of section headers (a newline character)
-  
-
+  ![App Screenshot](data/screenshots/challenges_ss1.png)
 
 ---
 
