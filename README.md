@@ -57,7 +57,7 @@ Outputs (under `data/processed`):
 
 5. **Visualization**  
    - Overlays translucent rectangles on the original page image.  
-   - **Sections = green, Subsections = orange.**  
+   - **Sections = purple, Subsections = green.**  
    - Great for QA/Debug.
 
 ---
@@ -117,7 +117,7 @@ This keeps labeling clean and avoids over-tagging normal text.
 
 ---
 
-## 5) Training tip (sketch)
+## 5) Training Plan
 
 ```python
 from datasets import load_dataset
