@@ -3,7 +3,6 @@ from PIL import Image
 from transformers import LayoutLMv3Processor
 
 def build_processor(model_name: str = "microsoft/layoutlmv3-base") -> LayoutLMv3Processor:
-    # apply_ocr=False because we already did OCR ourselves
     return LayoutLMv3Processor.from_pretrained(model_name, apply_ocr=False)
 
 def chunk_with_processor(pages: List[Dict[str, Any]], processor: LayoutLMv3Processor,
@@ -24,7 +23,7 @@ def chunk_with_processor(pages: List[Dict[str, Any]], processor: LayoutLMv3Proce
 
         enc = processor(
             images=image,
-            text=[words],            # batch of one
+            text=[words],         
             boxes=[boxes],
             word_labels=[word_labels],
             truncation=True,
